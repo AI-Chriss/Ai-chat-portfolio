@@ -1,9 +1,11 @@
-import './App.css'
+import ChatBox from './components/ChatBox.jsx'
 
-export default function App() {
+const App = () => {
   return (
-    <main>
-      React ⚛️ + Vite ⚡ + Replit
-    </main>
-  )
-}
+    <div className="App">
+      <ChatBox />
+    </div>
+  );
+};
+
+export default App;
