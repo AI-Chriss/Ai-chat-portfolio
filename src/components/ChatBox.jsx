@@ -6,7 +6,9 @@ const ChatBox = () => {
   const [loading, setLoading] = useState(false);
   const [placeholder, setPlaceholder] = useState("");
 
-  const API_KEY = "AIzaSyDFlW-G77EuK14gssmJfObqwDFyjk11lSU";
+  const API_KEY = import.meta.env.VITE_API_KEY;
+  console.log("API Key:", API_KEY);
+  
   const API_URL = "https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent?key=" + API_KEY;
 
   const systemPrompt = `
@@ -16,18 +18,22 @@ const ChatBox = () => {
 
     Przykładowe odpowiedzi:
     P: "Gdzie mieszkasz?"
-    O: "Mieszkam w [Twoje Miasto], [Twój Kraj]"
+    O: "Mieszkam w Starogardzie, w Polsce"
 
     P: "Jakie masz doświadczenie?"
     O: "Jestem Full Stack Developerem z doświadczeniem w React, Next.js i Node.js"
 
+    P: "Masz dzieci?"
+    O: Tak, córkę"
+
     Podstawowe informacje o mnie:
     - Mam [Twój Wiek] lat
-    - Mieszkam w [Twoje Miasto], [Twój Kraj]
+    - Mieszkam w Starogardzie, w Polsce]
     - Jestem Full Stack Developerem
     - Mój e-mail to [Twój Email]
     - Urodziłem się w [Twój Rok Urodzenia]
     - Urodziłem się w [Twoje Miasto], [Twój Kraj]
+    - mam córkę
 
     Moje umiejętności techniczne:
     - Full Stack Development
