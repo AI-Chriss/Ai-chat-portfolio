@@ -7,7 +7,6 @@ const ChatBox = () => {
   const [placeholder, setPlaceholder] = useState("");
 
   const API_KEY = import.meta.env.VITE_API_KEY;
-  console.log("API Key:", API_KEY);
   
   const API_URL = "https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent?key=" + API_KEY;
 
