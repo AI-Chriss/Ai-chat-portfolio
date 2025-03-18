@@ -1,7 +1,6 @@
 # AI-Chat-Portfolio
 
 ![React](https://img.shields.io/badge/Built%20with-React-blue?style=flat&logo=react)
-![Express](https://img.shields.io/badge/Backend-Express.js-green?style=flat&logo=express)
 
 An interactive AI-powered portfolio that allows visitors to engage with a chatbot interface to explore projects, skills, and background.
 
