@@ -1,17 +1,53 @@
-## Running React on Replit
+# AI-Chat-Portfolio
 
-[React](https://reactjs.org/) is a popular JavaScript library for building user interfaces.
+![React](https://img.shields.io/badge/Built%20with-React-blue?style=flat&logo=react)
+![Express](https://img.shields.io/badge/Backend-Express.js-green?style=flat&logo=express)
 
-[Vite](https://vitejs.dev/) is a blazing fast frontend build tool that includes features like Hot Module Reloading (HMR), optimized builds, and TypeScript support out of the box.
+An interactive AI-powered portfolio that allows visitors to engage with a chatbot interface to explore projects, skills, and background.
 
-Using the two in conjunction is one of the fastest ways to build a web app.
+## 🚀 Features
 
-### Getting Started
-- Hit run
-- Edit [App.jsx](#src/App.jsx) and watch it live update!
+- 🤖 **AI Chatbot** - Interactive chatbot for guiding visitors
+- 🎨 **Modern UI** - Built with React for a smooth experience
+- ⚡ **Fast & Lightweight** - Optimized performance using Vite
+- 🛠 **Customizable** - Easily modify content and styling
+- 🌎 **Deployed Online** - Ready for production hosting
 
-By default, Replit runs the `dev` script, but you can configure it by changing the `run` field in the [configuration file](#.replit). Here are the vite docs for [serving production websites](https://vitejs.dev/guide/build.html)
+## 📦 Installation
 
-### Typescript
+To run this project locally, follow these steps:
+```bash
+git clone https://github.com/AI-Chriss/Ai-chat-portfolio.git
+cd Ai-chat-portfolio
+```
 
-Just rename any file from `.jsx` to `.tsx`. You can also try our [TypeScript Template](https://replit.com/@replit/React-TypeScript)
+Install dependencies for both frontend and backend:
+```bash
+cd client
+npm install
+```
+
+## 🏃 Running the Project
+
+Run the frontend:
+```bash
+cd client
+npm run dev
+The app should now be accessible at http://localhost:5173/ (or another Vite default port).
+```
+
+## 🛠 Deployment
+To build and deploy:
+```bash
+cd client
+npm run build
+Then, host the dist/ folder on a static hosting service (e.g., Vercel, Netlify) and deploy the backend separately.
+```
+
+🤝 Contributing
+Contributions are welcome! Fork this repository, create a new branch, and submit a pull request with improvements.
+
+📜 License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+Made by AI-Chriss.
